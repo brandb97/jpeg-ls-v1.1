@@ -1,0 +1,30 @@
+/usr/bin/ld: marker.o:(.bss+0x28): multiple definition of `dim'; encoder.o:(.bss+0x1d98): first defined here
+/usr/bin/ld: marker.o:(.bss+0x0): multiple definition of `d'; encoder.o:(.bss+0x1d70): first defined here
+/usr/bin/ld: marker.o:(.bss+0x8): multiple definition of `c'; encoder.o:(.bss+0x1d78): first defined here
+/usr/bin/ld: marker.o:(.bss+0x10): multiple definition of `b'; encoder.o:(.bss+0x1d80): first defined here
+/usr/bin/ld: marker.o:(.bss+0x18): multiple definition of `a'; encoder.o:(.bss+0x1d88): first defined here
+/usr/bin/ld: marker.o:(.bss+0x20): multiple definition of `x'; encoder.o:(.bss+0x1d90): first defined here
+/usr/bin/ld: marker.o:(.bss+0x30): multiple definition of `pdim'; encoder.o:(.bss+0x1da0): first defined here
+/usr/bin/ld: general.o:(.bss+0x20): multiple definition of `x'; encoder.o:(.bss+0x1d90): first defined here
+/usr/bin/ld: general.o:(.bss+0x28): multiple definition of `dim'; encoder.o:(.bss+0x1d98): first defined here
+/usr/bin/ld: general.o:(.bss+0x18): multiple definition of `a'; encoder.o:(.bss+0x1d88): first defined here
+/usr/bin/ld: general.o:(.bss+0x8): multiple definition of `c'; encoder.o:(.bss+0x1d78): first defined here
+/usr/bin/ld: general.o:(.bss+0x0): multiple definition of `d'; encoder.o:(.bss+0x1d70): first defined here
+/usr/bin/ld: general.o:(.bss+0x10): multiple definition of `b'; encoder.o:(.bss+0x1d80): first defined here
+/usr/bin/ld: general.o:(.bss+0x30): multiple definition of `pdim'; encoder.o:(.bss+0x1da0): first defined here
+/usr/bin/ld: regular_mode.o:(.bss+0x0): multiple definition of `d'; encoder.o:(.bss+0x1d70): first defined here
+/usr/bin/ld: regular_mode.o:(.bss+0x8): multiple definition of `c'; encoder.o:(.bss+0x1d78): first defined here
+/usr/bin/ld: regular_mode.o:(.bss+0x10): multiple definition of `b'; encoder.o:(.bss+0x1d80): first defined here
+/usr/bin/ld: regular_mode.o:(.bss+0x18): multiple definition of `a'; encoder.o:(.bss+0x1d88): first defined here
+/usr/bin/ld: regular_mode.o:(.bss+0x20): multiple definition of `x'; encoder.o:(.bss+0x1d90): first defined here
+/usr/bin/ld: regular_mode.o:(.bss+0x28): multiple definition of `dim'; encoder.o:(.bss+0x1d98): first defined here
+/usr/bin/ld: regular_mode.o:(.bss+0x30): multiple definition of `pdim'; encoder.o:(.bss+0x1da0): first defined here
+/usr/bin/ld: run_mode.o:(.bss+0x0): multiple definition of `d'; encoder.o:(.bss+0x1d70): first defined here
+/usr/bin/ld: run_mode.o:(.bss+0x8): multiple definition of `c'; encoder.o:(.bss+0x1d78): first defined here
+/usr/bin/ld: run_mode.o:(.bss+0x10): multiple definition of `b'; encoder.o:(.bss+0x1d80): first defined here
+/usr/bin/ld: run_mode.o:(.bss+0x18): multiple definition of `a'; encoder.o:(.bss+0x1d88): first defined here
+/usr/bin/ld: run_mode.o:(.bss+0x20): multiple definition of `x'; encoder.o:(.bss+0x1d90): first defined here
+/usr/bin/ld: run_mode.o:(.bss+0x28): multiple definition of `dim'; encoder.o:(.bss+0x1d98): first defined here
+/usr/bin/ld: run_mode.o:(.bss+0x30): multiple definition of `pdim'; encoder.o:(.bss+0x1da0): first defined here
+collect2: 错误：ld 返回 1
+make: *** [makefile:13：jpeglse] 错误 1

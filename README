@@ -1,0 +1,28 @@
+       The files in this subdirectory relate to programs implementing the
+JPEG-lS standard for lossless image coding and decoding algorithms.
+
+By:
+
+ Ismaeil R. Ismaeil and Dr. Faouzi Kossintini
+ ismail@ece.ubc.ca, faouzi@ece.ubc.ca.
+ 
+
+---------------------------------------Notice------------------------------------------
+
+These programs are Copyright (c) University of British Columbia. All rights reserved.
+They may be freely redistributed in their entirety provided that this copyright
+notice is not removed.  They may not be sold for profit or incorporated in
+commercial programs without the written permission of the copyright holder.
+Each program is provided as is, without any express or implied warranty,
+without even the warranty of fitness for a particular purpose.
+
+PLEASE NOTE THAT THIS REALEASE HAS NOT BEEN OPTIMIZED FOR SPEED, SHOULD NOT BE USED
+FOR BENCHMARKING, ETC. A FASTER VERSION WILL BE RELEASED SOON.
+
+---------------------------------------------------------------------------------------
+
+The programs implement lossless compression and decompression of monochrome still
+images stored in headerless format, 1 or 2 bytes per pel.
+The *.z files have been compressed with 'gzip' and must be decompressed with
+'gunzip'.  The archive files with .tar extensions (after decompression) are
+exploded with 'tar xvf'.

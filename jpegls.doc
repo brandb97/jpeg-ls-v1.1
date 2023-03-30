@@ -1,0 +1,101 @@
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+         JPEG-LS Lossless Image Compression Standard
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                    C version  1.0  -  9/30/97
+
+       Ismail R. Ismail: ismail@ece.ubc.ca.
+       Faouzi Kossentini: faouzi@ece.ubc.ca.
+       
+       Dept. of Electrical and Computer Engineering
+       University of British Columbia
+       Vancouver, BC, V6t 1Z4, Canada.
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+           Copyright (c) 1997 Ismail R. Ismail and Faouzi Kossintini.
+
+  These programs are Copyright (c) by Ismail R. Ismail & Faouzi Kossintini. 
+  They may be freely redistributed in their entirety provided that this
+  copyright notice is not removed. They may not be sold for profit or
+  incorporated in commercial programs without the written permission of
+  the copyright holders. Each program is provided as is, without any
+  express or implied warranty, without even the warranty of fitness for
+  a particular purpose.
+
+  PLEASE NOTE THAT THIS REALEASE HAS NOT BEEN OPTIMIZED FOR SPEED, SHOULD NOT
+  BE USED FOR BENCHMARKING, ETC. A FASTER VERSION WILL BE RELEASED SOON.
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+DESCRIPTION
+===========
+
+The image compression programs in this package are implementations
+of the JPEG-LS standard as described in the ISO/IEC JTC 1/SC 29/WG 1
+(ITU-T SG8) document.
+
+PEG-LS Tutorial
+===============
+
+If you are new to the JPEG-LS coding standard, the core of the standard 
+is based on this paper:
+
+ M. Weinberger, G. Seroussi, G. Sapiro, " LOCO-I: A Low Complexity, Context-Based,
+ Lossless Image Compression Algorithm, " Proc. IEEE Data Compression Conference,
+ Snowbird, Utah, March-April 1996. 
+
+COMPILATION
+===========
+
+For the Encoder do the Following at the UNIX prompt:
+cd Encoder
+make jpelse
+
+For the Decoder do the Following at the UNIX prompt:
+cd Decoder
+make jpelsd
+
+USAGE
+=====
+
+When in doubt about the command-line options and parameters, run
+program with the option '-u' after the program name.
+
+The original images should be in raster format, but WITHOUT the header
+(also called RAW format). It is assumed that the image is stored as a
+sequence of horizontal lines.
+
+For monochrome images each pixel can be represented with 1 or 2 bytes
+(most significant first).
+
+EXAMPLES
+========
+
+(1) Here is an example of the usage of the program 'jpeglse'.
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+<UNIX prompt> jpeglse image1 output nrows ncols P
+
+        image1 - Original image
+        output - compressed bit stream
+        nrows  - # of image lines
+        ncols  - # of pel/line
+        P      - Precision  bits/pel.
+
+
+(2) Here is an example of the usage of the program 'jpeglsd'
+. . . . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . .
+<UNIX prompt> image1 output
+
+        image1 - compressed
+        output - reconstructed image
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
